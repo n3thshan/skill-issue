@@ -25,8 +25,8 @@ Before searching, correct any apparent misspellings in case names (e.g. "madarsa
 Find per case: (1) material facts — what happened, (2) holding/ruling — what the court decided and why.
 
 **Tool priority** — move to the next only if the current returns nothing useful:
-1. Tavily — query: `[Case Name] case law ruling facts`
-2. Apify/Google Search Scraper (last resort, when Tavily search yields nothing useful)
+1. `mcpjungle:google__apify--google-search-scraper` — query: `[Case Name] case law ruling facts`
+2. Native web search (last resort)
 
 **Source merging:**
 - Facts → web search primary; fill gaps with user's notes
