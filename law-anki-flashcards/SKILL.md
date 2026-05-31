@@ -27,6 +27,15 @@ Find per case: (1) material facts — what happened, (2) holding/ruling — what
 **Tool priority** — move to the next only if the current returns nothing useful:
 1. Tavily — query: `[Case Name] case law ruling facts`
 2. Apify/Google Search Scraper (last resort, when Tavily search yields nothing useful)
+   Always include these parameters when invoking this tool:
+   ```json
+   {
+     "country": "GB",
+     "include_merged": true,
+     "limit": "10",
+     "page": 1
+   }
+   ```
 
 **Source merging:**
 - Facts → web search primary; fill gaps with user's notes
